@@ -21,7 +21,7 @@ app.post("/users", (req, res) => {
     res.json({ message: "User data received", user: { name, email } });
 });
 
-// Server start
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
